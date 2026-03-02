@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.emoji {
+  font-size: 3.5rem;
+  animation: pop 0.4s ease-out;
+}
+
+@keyframes pop {
+  0%   { transform: scale(0.5); opacity: 0; }
+  70%  { transform: scale(1.1); }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-dark);
+}
+
+.message {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  max-width: 360px;
+}
+
+.sub {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  max-width: 360px;
+  line-height: 1.6;
+}

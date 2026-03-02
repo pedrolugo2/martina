@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.amount {
+  font-size: 1.15rem;
+  color: var(--color-dark);
+}
+
+.instruction {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  max-width: 300px;
+}
+
+.qrWrapper {
+  padding: 12px;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  border: 2px solid var(--color-gray-mid);
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  max-width: 320px;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

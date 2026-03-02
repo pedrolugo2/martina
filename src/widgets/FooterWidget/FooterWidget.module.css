@@ -1,0 +1,95 @@
+.footer {
+  background: var(--color-dark);
+  color: var(--color-white);
+  padding: 72px 24px 48px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.bee {
+  font-size: 3rem;
+}
+
+.title {
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  font-weight: 800;
+  color: var(--color-yellow);
+  line-height: 1.3;
+}
+
+.message {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #ccc;
+  max-width: 520px;
+}
+
+.signature {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-yellow);
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+.references {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.refTitle {
+  font-size: 0.85rem;
+  color: #aaa;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.refLinks {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.refLinks a {
+  color: var(--color-blue);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color var(--transition-fast);
+}
+
+.refLinks a:hover {
+  color: var(--color-yellow);
+  text-decoration: underline;
+}
+
+.refLinks span {
+  color: #555;
+}
+
+.warning {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.credits {
+  font-size: 0.85rem;
+  color: #666;
+}

@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.presets {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.presetBtn {
+  flex: 1;
+  min-width: 80px;
+  padding: 14px 8px;
+  border: 2px solid var(--color-gray-mid);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.presetBtn:hover {
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+  background: rgba(255, 152, 0, 0.05);
+}
+
+.presetBtnActive {
+  border-color: var(--color-orange);
+  background: var(--color-orange);
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(255, 152, 0, 0.35);
+}
+
+.customRow {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--color-gray-mid);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.customRow:focus-within {
+  border-color: var(--color-orange);
+}
+
+.prefix {
+  padding: 14px 14px;
+  background: var(--color-gray);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  border-right: 1px solid var(--color-gray-mid);
+  white-space: nowrap;
+}
+
+.customInput {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  outline: none;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  background: var(--color-white);
+}
+
+/* Hide number input arrows */
+.customInput::-webkit-outer-spin-button,
+.customInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.customInput[type=number] { -moz-appearance: textfield; }

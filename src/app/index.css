@@ -1,0 +1,109 @@
+/* ─── Design tokens ─────────────────────────────────────────────────────── */
+:root {
+  --color-yellow:       #FDD835;
+  --color-yellow-dark:  #F9A825;
+  --color-orange:       #FF9800;
+  --color-orange-dark:  #E65100;
+  --color-blue:         #87CEEB;
+  --color-blue-light:   #E3F4FC;
+  --color-white:        #FFFFFF;
+  --color-gray-light:   #FFF9E6;
+  --color-gray:         #F5F5F5;
+  --color-gray-mid:     #E0E0E0;
+  --color-dark:         #1A1A1A;
+  --color-text-muted:   #666666;
+
+  --font-primary:       'Nunito', sans-serif;
+
+  --radius-sm:          8px;
+  --radius-md:          12px;
+  --radius-lg:          20px;
+  --radius-full:        9999px;
+
+  --shadow-sm:          0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-card:        0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg:          0 8px 32px rgba(0, 0, 0, 0.12);
+
+  --transition-fast:    0.15s ease;
+  --transition-base:    0.25s ease;
+}
+
+/* ─── Reset ─────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--color-orange);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ─── Section helpers ────────────────────────────────────────────────────── */
+.section {
+  padding: 64px 24px;
+}
+
+.section--yellow {
+  background-color: var(--color-yellow);
+}
+
+.section--white {
+  background-color: var(--color-white);
+}
+
+.section--gray {
+  background-color: var(--color-gray-light);
+}
+
+.section--orange {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.section__container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.section__title {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.section__subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--color-text-muted);
+}
+
+/* ─── Utility ────────────────────────────────────────────────────────────── */
+.text-center { text-align: center; }
+.mt-4 { margin-top: 16px; }
+.mt-8 { margin-top: 32px; }
